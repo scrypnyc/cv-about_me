@@ -15,6 +15,9 @@ class MainPDFView: PDFView {
         super.init(frame: frame)
         self.translatesAutoresizingMaskIntoConstraints = false
         self.document = PDFDocument(url: Bundle.main.url(forResource: "file", withExtension: "pdf")!)
+        self.autoScales = true
+        self.isUserInteractionEnabled = true
+        self.displayDirection = .horizontal
     }
     
     required init?(coder aDecoder: NSCoder) {

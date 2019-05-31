@@ -7,8 +7,9 @@
 //
 
 import UIKit
+import PDFKit
 
-class MainViewController: UIViewController {
+class MainViewController: UIViewController, PDFViewDelegate {
     
     let pdfView = MainPDFView(frame: .zero)
 
@@ -23,8 +24,6 @@ class MainViewController: UIViewController {
             pdfView.rightAnchor.constraint(equalTo: view.rightAnchor),
 
             ])
-
-//        tabBarController?.tabBar.selectedItem?.badgeValue = nil
     }
 }
 
