@@ -8,20 +8,24 @@
 
 /* Begin PBXBuildFile section */
 		E53FD31A22A1277C000CC67A /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = E53FD31922A1277C000CC67A /* AppDelegate.swift */; };
-		E53FD31C22A1277C000CC67A /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E53FD31B22A1277C000CC67A /* ViewController.swift */; };
+		E53FD31C22A1277C000CC67A /* MainViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E53FD31B22A1277C000CC67A /* MainViewController.swift */; };
 		E53FD31F22A1277C000CC67A /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E53FD31D22A1277C000CC67A /* Main.storyboard */; };
 		E53FD32122A1277E000CC67A /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = E53FD32022A1277E000CC67A /* Assets.xcassets */; };
 		E53FD32422A1277E000CC67A /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E53FD32222A1277E000CC67A /* LaunchScreen.storyboard */; };
+		E53FD33322A12D57000CC67A /* file.pdf in Resources */ = {isa = PBXBuildFile; fileRef = E53FD33222A12D57000CC67A /* file.pdf */; };
+		E53FD33522A13172000CC67A /* MainPDFView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E53FD33422A13172000CC67A /* MainPDFView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		E53FD31622A1277C000CC67A /* cv-about_me.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "cv-about_me.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		E53FD31922A1277C000CC67A /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		E53FD31B22A1277C000CC67A /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		E53FD31B22A1277C000CC67A /* MainViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainViewController.swift; sourceTree = "<group>"; };
 		E53FD31E22A1277C000CC67A /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		E53FD32022A1277E000CC67A /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		E53FD32322A1277E000CC67A /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		E53FD32522A1277E000CC67A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		E53FD33222A12D57000CC67A /* file.pdf */ = {isa = PBXFileReference; lastKnownFileType = image.pdf; name = file.pdf; path = ../../../../Downloads/file.pdf; sourceTree = "<group>"; };
+		E53FD33422A13172000CC67A /* MainPDFView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainPDFView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -54,14 +58,48 @@
 		E53FD31822A1277C000CC67A /* cv-about_me */ = {
 			isa = PBXGroup;
 			children = (
-				E53FD31922A1277C000CC67A /* AppDelegate.swift */,
-				E53FD31B22A1277C000CC67A /* ViewController.swift */,
-				E53FD31D22A1277C000CC67A /* Main.storyboard */,
-				E53FD32022A1277E000CC67A /* Assets.xcassets */,
-				E53FD32222A1277E000CC67A /* LaunchScreen.storyboard */,
+				E53FD32B22A127B3000CC67A /* Controllers */,
+				E53FD32F22A128E5000CC67A /* View */,
+				E53FD32D22A127DC000CC67A /* Resources */,
+				E53FD32C22A127C2000CC67A /* Support Files */,
 				E53FD32522A1277E000CC67A /* Info.plist */,
 			);
 			path = "cv-about_me";
+			sourceTree = "<group>";
+		};
+		E53FD32B22A127B3000CC67A /* Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				E53FD31B22A1277C000CC67A /* MainViewController.swift */,
+				E53FD33422A13172000CC67A /* MainPDFView.swift */,
+			);
+			path = Controllers;
+			sourceTree = "<group>";
+		};
+		E53FD32C22A127C2000CC67A /* Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				E53FD32022A1277E000CC67A /* Assets.xcassets */,
+				E53FD31922A1277C000CC67A /* AppDelegate.swift */,
+				E53FD32222A1277E000CC67A /* LaunchScreen.storyboard */,
+			);
+			path = "Support Files";
+			sourceTree = "<group>";
+		};
+		E53FD32D22A127DC000CC67A /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				E53FD33222A12D57000CC67A /* file.pdf */,
+			);
+			path = Resources;
+			sourceTree = "<group>";
+		};
+		E53FD32F22A128E5000CC67A /* View */ = {
+			isa = PBXGroup;
+			children = (
+				E53FD31D22A1277C000CC67A /* Main.storyboard */,
+			);
+			path = View;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -122,6 +160,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				E53FD33322A12D57000CC67A /* file.pdf in Resources */,
 				E53FD32422A1277E000CC67A /* LaunchScreen.storyboard in Resources */,
 				E53FD32122A1277E000CC67A /* Assets.xcassets in Resources */,
 				E53FD31F22A1277C000CC67A /* Main.storyboard in Resources */,
@@ -135,7 +174,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				E53FD31C22A1277C000CC67A /* ViewController.swift in Sources */,
+				E53FD33522A13172000CC67A /* MainPDFView.swift in Sources */,
+				E53FD31C22A1277C000CC67A /* MainViewController.swift in Sources */,
 				E53FD31A22A1277C000CC67A /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
